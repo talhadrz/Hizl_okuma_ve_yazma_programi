@@ -146,7 +146,7 @@ namespace oku_Yaz
             this.Controls.Add(this.txtKelime);
             this.Controls.Add(this.btnBasla);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Kelime Yazma";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
