@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="KelimelerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Esyalar">
+          <Key>
+            <PropertyRef Name="EsyalarId" />
+          </Key>
+          <Property Name="EsyalarId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Esyalar" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Hayvanlar">
+          <Key>
+            <PropertyRef Name="HayvanId" />
+          </Key>
+          <Property Name="HayvanId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hayvanlar" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Kelimeler_D">
+          <Key>
+            <PropertyRef Name="Kelimeler_DId" />
+          </Key>
+          <Property Name="Kelimeler_DId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kelimeler_D" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Meslekler">
+          <Key>
+            <PropertyRef Name="MeslekId" />
+          </Key>
+          <Property Name="MeslekId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Meslekler" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Teknoloji">
+          <Key>
+            <PropertyRef Name="TeknolojiId" />
+          </Key>
+          <Property Name="TeknolojiId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Teknolojilr" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="WordCount">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="WordCount" Type="int" />
+          <Property Name="Name" Type="nvarchar" MaxLength="20" />
+          <Property Name="password" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityContainer Name="KelimelerModelStoreContainer">
+          <EntitySet Name="Esyalar" EntityType="Self.Esyalar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Hayvanlar" EntityType="Self.Hayvanlar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Kelimeler_D" EntityType="Self.Kelimeler_D" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Meslekler" EntityType="Self.Meslekler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Teknoloji" EntityType="Self.Teknoloji" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="WordCount" EntityType="Self.WordCount" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KelimelerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Esyalar">
+          <Key>
+            <PropertyRef Name="EsyalarId" />
+          </Key>
+          <Property Name="EsyalarId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Esyalar1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Hayvanlar">
+          <Key>
+            <PropertyRef Name="HayvanId" />
+          </Key>
+          <Property Name="HayvanId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hayvanlar1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Kelimeler_D">
+          <Key>
+            <PropertyRef Name="Kelimeler_DId" />
+          </Key>
+          <Property Name="Kelimeler_DId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kelimeler_D1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Meslekler">
+          <Key>
+            <PropertyRef Name="MeslekId" />
+          </Key>
+          <Property Name="MeslekId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Meslekler1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Teknoloji">
+          <Key>
+            <PropertyRef Name="TeknolojiId" />
+          </Key>
+          <Property Name="TeknolojiId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Teknolojilr" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="KelimelerEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Esyalar" EntityType="Self.Esyalar" />
+          <EntitySet Name="Hayvanlar" EntityType="Self.Hayvanlar" />
+          <EntitySet Name="Kelimeler_D" EntityType="Self.Kelimeler_D" />
+          <EntitySet Name="Meslekler" EntityType="Self.Meslekler" />
+          <EntitySet Name="Teknoloji" EntityType="Self.Teknoloji" />
+          <EntitySet Name="WordCounts" EntityType="KelimelerModel.WordCount" />
+        </EntityContainer>
+        <EntityType Name="WordCount">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="WordCount1" Type="Int32" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KelimelerModelStoreContainer" CdmEntityContainer="KelimelerEntities1">
+          <EntitySetMapping Name="Esyalar">
+            <EntityTypeMapping TypeName="KelimelerModel.Esyalar">
+              <MappingFragment StoreEntitySet="Esyalar">
+                <ScalarProperty Name="EsyalarId" ColumnName="EsyalarId" />
+                <ScalarProperty Name="Esyalar1" ColumnName="Esyalar" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hayvanlar">
+            <EntityTypeMapping TypeName="KelimelerModel.Hayvanlar">
+              <MappingFragment StoreEntitySet="Hayvanlar">
+                <ScalarProperty Name="HayvanId" ColumnName="HayvanId" />
+                <ScalarProperty Name="Hayvanlar1" ColumnName="Hayvanlar" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kelimeler_D">
+            <EntityTypeMapping TypeName="KelimelerModel.Kelimeler_D">
+              <MappingFragment StoreEntitySet="Kelimeler_D">
+                <ScalarProperty Name="Kelimeler_DId" ColumnName="Kelimeler_DId" />
+                <ScalarProperty Name="Kelimeler_D1" ColumnName="Kelimeler_D" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Meslekler">
+            <EntityTypeMapping TypeName="KelimelerModel.Meslekler">
+              <MappingFragment StoreEntitySet="Meslekler">
+                <ScalarProperty Name="MeslekId" ColumnName="MeslekId" />
+                <ScalarProperty Name="Meslekler1" ColumnName="Meslekler" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Teknoloji">
+            <EntityTypeMapping TypeName="KelimelerModel.Teknoloji">
+              <MappingFragment StoreEntitySet="Teknoloji">
+                <ScalarProperty Name="TeknolojiId" ColumnName="TeknolojiId" />
+                <ScalarProperty Name="Teknolojilr" ColumnName="Teknolojilr" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="WordCounts">
+            <EntityTypeMapping TypeName="KelimelerModel.WordCount">
+              <MappingFragment StoreEntitySet="WordCount">
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="WordCount1" ColumnName="WordCount" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
