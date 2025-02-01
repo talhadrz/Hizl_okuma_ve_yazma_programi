@@ -69,3 +69,13 @@ Bu proje, kullanıcı girişi, kayıt, güncelleme ve kelime yazma gibi çeşitl
 
 5. **Çıkış Butonu**:
    - Programı kapatır.
+
+## Proje Özeti
+
+Bu proje, kullanıcıların güvenli bir şekilde giriş yapabileceği, kayıt olabileceği, bilgilerini güncelleyebileceği ve kelime yazma pratiği yapabileceği bir uygulamadır. Temel özellikleri şunlardır:
+
+- **Kullanıcı Girişi**: Kullanıcı adı ve şifre doğrulaması ile güvenli giriş.
+- **Kullanıcı Yönetimi**: Yeni kullanıcı kaydı, mevcut kullanıcı bilgilerini güncelleme ve kullanıcı silme.
+- **Kelime Yazma Pratiği**: Rastgele kelimelerle yazma pratiği yapma ve doğru yazım kontrolü.
+
+Bu uygulama, kullanıcıların hem kişisel bilgilerini yönetebileceği hem de eğlenceli bir şekilde yazma becerilerini geliştirebileceği bir platform sunar.
