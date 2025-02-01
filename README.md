@@ -1,35 +1,71 @@
-# Burası Giriş Sayfası
+# Proje Adı
 
- ![image](https://github.com/user-attachments/assets/c28d2515-a100-4fa8-bcaa-af9d15ee6013)
+Bu proje, kullanıcı girişi, kayıt, güncelleme ve kelime yazma gibi çeşitli özellikleri içeren bir uygulamadır.
 
-## Özellikleri
- 1. (gir buttonu) kullanıcı ismini kontrol ediyor eğer veri tabanında kayıtlıysa şifresine bakıyor oda doğruysa girme işlemini tamamlıyor.
- 2. (sil buttonu) aynı şekilde kullanıcı adını kontrol edip şifreyi kontrol ediyor eğer veriler doğruysa kontrol amaçlı bir meşaj ile silinmesini istendiğini tekrar kontrol ediyor ve oda onaylanırsa veri'yi siliyor.
- 3. (güncelle buttonu) aynı şekilde ad ve sifreyi kontrol ediyor ve doğrulanırsa güncelleme sayfasını açıp ad ve şifresini oraya aktarıyor.
- 4. (kayıt ol buttonu) yeni bir kişi eklemek için kayıt formunu açıyor.
- 5. (form load) veri tabanındaki isimnleri isim combobox aracına ekliyor.
+## Giriş Sayfası
 
- # Burası Kayıt ve Güncelle Sayfası
+![Giriş Sayfası](https://github.com/user-attachments/assets/c28d2515-a100-4fa8-bcaa-af9d15ee6013)
 
-![image](https://github.com/user-attachments/assets/25f1bfd0-6f28-4a6c-b039-545e0d8e3473)
+### Özellikler
 
-## Özellikler
+1. **Giriş Butonu**: 
+   - Kullanıcı adını kontrol eder. Eğer veritabanında kayıtlıysa, şifresini doğrular ve giriş işlemini tamamlar.
+   
+2. **Sil Butonu**: 
+   - Kullanıcı adını ve şifresini kontrol eder. Eğer doğrulanırsa, kullanıcıyı silmek için onay ister ve onay alındıktan sonra kullanıcıyı siler.
+   
+3. **Güncelle Butonu**: 
+   - Kullanıcı adını ve şifresini kontrol eder. Doğrulanırsa, güncelleme sayfasını açar ve kullanıcı bilgilerini bu sayfaya aktarır.
+   
+4. **Kayıt Ol Butonu**: 
+   - Yeni bir kullanıcı eklemek için kayıt formunu açar.
+   
+5. **Form Load**: 
+   - Veritabanındaki isimleri, isim combobox'ına ekler.
 
-  ## 1. bu sayfa iki amaçta kullanılıyor bir yeni kişi kaydetme iki kayıtlı veriyi güncelleme.
-    1.1 (kişi ekleme) form text "Kayıt Formu" ve button text "Kaydet" diye değişiyor.
-    1.2 (veri güncelle) form text "Güncelleme Formu" ve button text "Güncelle".
- ## 2. (button özellikleri) bir kaydet iki güncelle.
-    2.1 (kayıt) önce isim verisini kontrol ediyor aynısı varsa izin vermiyor ve şifresini 4 karakterden az olmasını kontrol ediyor ve tabiki ad ve şifre kısmını doldurup doldurulmadığını kontrol ediyor ve doğrulanırsa yeni kişi kaydını yapıyor.
-    2.2 (güncelle) adı ve şifrreyi kontrol ediyor boş olup olmadığını şifrenin uzunluğunu 4 karakterden az olup olmadığını kontrol ediyor ve bir hata oluşmaz ise güncelleme işlemini yapıyor.
-     
- # Burası Kelime Yazma Sayfası
+## Kayıt ve Güncelleme Sayfası
 
- ![image](https://github.com/user-attachments/assets/e4ecd787-d62b-459c-b276-77fc7d136210)
+![Kayıt ve Güncelleme Sayfası](https://github.com/user-attachments/assets/25f1bfd0-6f28-4a6c-b039-545e0d8e3473)
 
-## Özellikler
+### Özellikler
 
-## (Form Load) giriş sayfası girme işlemini yaparken ad verisini bu formun içindeki ad değişkenine atıyor ve formn ilk açılırken bu ad verisini kullanarak veri tabanından kaç kelime yazdığını alıp "Tüm yazılan kelime sayısı" labeline yazdı
-## (button click) veri tabanından 5 farklı kelime kategorisini tutan tablolardan rasrtgele bir tablo ve o tablodanda yine rastgele bir kelime tutup textbox text kısmına kelimenin uzunluğuna göre yazıp siliyor
-## (textBox KeyDown) enter tuşuna basılıp basılmadığını kontrol ediyor basılırsa textbox text kısmındaki yazılan veriyi önceki yazıp silinen veriyle uyuşuyormu kontrol ederek eğer uyuşuyor ise yenikelime seçip gösterip siliyor yada yanlış yazılmış ise silip doğrusunu yazıp siliyor 
-## (geiri buttonu) giriş sayfasını açıyor
-## (çıkış buttonu) proğramı kapatıyor
+1. **Sayfa İki Amaçla Kullanılır**:
+   - **Yeni Kişi Kaydetme**: Form başlığı "Kayıt Formu" ve buton metni "Kaydet" olarak değişir.
+   - **Kayıtlı Veriyi Güncelleme**: Form başlığı "Güncelleme Formu" ve buton metni "Güncelle" olarak değişir.
+
+2. **Buton Özellikleri**:
+   - **Kaydet Butonu**:
+     - İsim verisini kontrol eder. Aynı isimde bir kayıt varsa izin vermez.
+     - Şifrenin 4 karakterden az olmamasını kontrol eder.
+     - Ad ve şifre alanlarının doldurulup doldurulmadığını kontrol eder.
+     - Doğrulanırsa yeni kullanıcı kaydını yapar.
+   - **Güncelle Butonu**:
+     - Ad ve şifre alanlarının boş olup olmadığını kontrol eder.
+     - Şifrenin 4 karakterden az olmamasını kontrol eder.
+     - Hata yoksa güncelleme işlemini gerçekleştirir.
+
+## Kelime Yazma Sayfası
+
+![Kelime Yazma Sayfası](https://github.com/user-attachments/assets/e4ecd787-d62b-459c-b276-77fc7d136210)
+
+### Özellikler
+
+1. **Form Load**:
+   - Giriş sayfasındaki kullanıcı adını bu formun içindeki ad değişkenine atar.
+   - Form ilk açıldığında, veritabanından kullanıcının yazdığı kelime sayısını alır ve "Tüm yazılan kelime sayısı" label'ine yazar.
+
+2. **Buton Tıklama**:
+   - Veritabanındaki 5 farklı kelime kategorisinden rastgele bir tablo seçer ve o tablodan rastgele bir kelime alır.
+   - Seçilen kelimeyi textbox'ta gösterir ve ardından siler.
+
+3. **TextBox KeyDown**:
+   - Enter tuşuna basılıp basılmadığını kontrol eder.
+   - Eğer basılırsa, textbox'ta yazılan metni önceki kelimeyle karşılaştırır.
+   - Eğer doğru yazılmışsa, yeni bir kelime seçer ve gösterir.
+   - Yanlış yazılmışsa, doğrusunu gösterir ve siler.
+
+4. **Giriş Butonu**:
+   - Giriş sayfasını açar.
+
+5. **Çıkış Butonu**:
+   - Programı kapatır.
