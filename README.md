@@ -25,3 +25,11 @@
  # Burası Kelime Yazma Sayfası
 
  ![image](https://github.com/user-attachments/assets/e4ecd787-d62b-459c-b276-77fc7d136210)
+
+## Özellikler
+
+## (Form Load) giriş sayfası girme işlemini yaparken ad verisini bu formun içindeki ad değişkenine atıyor ve formn ilk açılırken bu ad verisini kullanarak veri tabanından kaç kelime yazdığını alıp "Tüm yazılan kelime sayısı" labeline yazdı
+## (button click) veri tabanından 5 farklı kelime kategorisini tutan tablolardan rasrtgele bir tablo ve o tablodanda yine rastgele bir kelime tutup textbox text kısmına kelimenin uzunluğuna göre yazıp siliyor
+## (textBox KeyDown) enter tuşuna basılıp basılmadığını kontrol ediyor basılırsa textbox text kısmındaki yazılan veriyi önceki yazıp silinen veriyle uyuşuyormu kontrol ederek eğer uyuşuyor ise yenikelime seçip gösterip siliyor yada yanlış yazılmış ise silip doğrusunu yazıp siliyor 
+## (geiri buttonu) giriş sayfasını açıyor
+## (çıkış buttonu) proğramı kapatıyor
