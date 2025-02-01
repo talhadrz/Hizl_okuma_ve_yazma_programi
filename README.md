@@ -15,10 +15,10 @@
 
 ## Özellikler
 
-  1. bu sayfa iki amaçta kullanılıyor bir yeni kişi kaydetme iki kayıtlı veriyi güncelleme.
+  ## 1. bu sayfa iki amaçta kullanılıyor bir yeni kişi kaydetme iki kayıtlı veriyi güncelleme.
     1.1 (kişi ekleme) form text "Kayıt Formu" ve button text "Kaydet" diye değişiyor.
     1.2 (veri güncelle) form text "Güncelleme Formu" ve button text "Güncelle".
-  2. (button özellikleri) bir kaydet iki güncelle.
+ ## 2. (button özellikleri) bir kaydet iki güncelle.
     2.1 (kayıt) önce isim verisini kontrol ediyor aynısı varsa izin vermiyor ve şifresini 4 karakterden az olmasını kontrol ediyor ve tabiki ad ve şifre kısmını doldurup doldurulmadığını kontrol ediyor ve doğrulanırsa yeni kişi kaydını yapıyor.
     2.2 (güncelle) adı ve şifrreyi kontrol ediyor boş olup olmadığını şifrenin uzunluğunu 4 karakterden az olup olmadığını kontrol ediyor ve bir hata oluşmaz ise güncelleme işlemini yapıyor.
      
